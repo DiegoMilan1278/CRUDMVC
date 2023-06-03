@@ -1,0 +1,64 @@
+﻿@model IEnumerable<FinalMvc.Models.Cliente>
+@{
+	ViewData["Title"] = "Clientes";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+	<h1 style="font-family:serif">REPORTE DE CLIENTES</h1>
+</div>
+
+<div class="container">
+    <div class="class= col-sm-3">
+        <a asp-controller="Reportes" asp-action="IndexR" asp-area="" class="btn btn-outline-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+            </svg>
+        </a>
+    </div>
+    <hr />
+	<div class="row">
+    	@if (Model.Count() > 0)
+    	{
+        	<table class="table table-bordered table-striped">
+            	<thead>
+                	<tr>
+                    	<td>@Html.DisplayNameFor(m => m.CedulaCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.NombreCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.ApellidoCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.DireccionCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.TelefonoCliente)</td>
+                	</tr>
+            	</thead>
+            	<tbody>
+                	@foreach (var item in Model)
+                	{
+                    	<tr>
+                        	<td>@item.CedulaCliente</td>
+                        	<td>@item.NombreCliente</td>
+                        	<td>@item.ApellidoCliente</td>
+                        	<td>@item.DireccionCliente</td>
+                        	<td>@item.TelefonoCliente</td>
+                    	</tr>
+                	}
+            	</tbody>
+        	</table>
+    	}
+    	else
+    	{
+        	<table class="table table-bordered table-striped">
+            	<thead>
+                	<tr>
+                    	<td>@Html.DisplayNameFor(m => m.CedulaCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.NombreCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.ApellidoCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.DireccionCliente)</td>
+                    	<td>@Html.DisplayNameFor(m => m.TelefonoCliente)</td>
+                	</tr>
+            	</thead>
+        	</table>
+        	<p>No existen Clientes Registrados</p>
+    	}
+	</div>
+</div>

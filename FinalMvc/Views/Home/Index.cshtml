@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 style="padding: 75px; font-weight: bolder; color: #2206F0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
+        </svg>  BIENVENID@S  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
+        </svg>
+    </h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card bg-warning">
+                <img src="https://blog.debmedia.com/wp-content/uploads/2020/07/20-07-4-El-impacto-de-la-experiencia-en-sucursal-en-la-opini%C3%B3n-de-clientes-en-redes-sociales-pre.jpg" class="card-img-top" alt="Cliente">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Clientes</h5>
+                    <p class="card-text" style="font-weight: bold">Encuentra toda tu información de clientes.</p>
+                    <a asp-action="Index" asp-controller="Clientes" class="btn btn-dark">Ir</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-danger">
+                <img src="https://st3.depositphotos.com/1177973/12722/i/950/depositphotos_127229074-stock-photo-vegetables-and-dairy-products.jpg" class="card-img-top" alt="Producto" style="width: 545px; height: 310px">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Productos</h5>
+                    <p class="card-text" style="font-weight: bold">Encuentra toda tu información de Productos.</p>
+                    <a asp-action="Index" asp-controller="Productos" class="btn btn-dark">Ir</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-success">
+                <img src="https://res.cloudinary.com/dte7upwcr/image/upload/v1639252667/blog/blog2/promocion-de-ventas/que-es-la-promocion-de-ventas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Ventas</h5>
+                    <p class="card-text" style="font-weight: bold">Encuentra toda tu información de Ventas.</p>
+                    <a asp-action="Index" asp-controller="Ventas" class="btn btn-dark">Ir</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-secondary">
+                <img src="https://images.freeimages.com/clg/istock/previews/9053/90533831-cartoon-businessman-hands-with-sign-payment-bill-receipt.jpg" class="card-img-top" alt="Facturas" style="height: 305px">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Facturas</h5>
+                    <p class="card-text" style="font-weight: bold">Encuentra toda tu información de Facturas.</p>
+                    <a asp-action="Index" asp-controller="Facturas" class="btn btn-dark">Ir</a>
+                </div>
+            </div>
+        </div>
+        <div class="justify-content-center">
+            <div class="card bg-info">
+                <img src="https://www.expoknews.com/wp-content/uploads/2019/08/Reportes-de-sustentabilidad-alineados-a-ODS.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Reportes</h5>
+                    <p class="card-text" style="font-weight: bold">Encuentra toda tu información de Reportes.</p>
+                    <a asp-action="IndexR" asp-controller="Reportes" class="btn btn-dark">Ir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
